@@ -8,7 +8,8 @@ var router = express.Router();
 router.get('/',function(req,res){
     //res.send("this index page");
     var params = {
-        title:req.query.title
+        title:req.query.title,
+        scripts:['code/index.js']
     } ;
     res.render("index",params);
 });

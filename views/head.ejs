@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title><%= title %></title>
+    <% if(scripts){ %>
+    <% for(var i=0; i < scripts.length; i++){ %>
+    <% var scoure = scripts[i] %>
+    <script type='text/javascript' src= <%= scoure %>></script>
+    <% } %>
+    <% } %>
 </head>
 <body>
 
